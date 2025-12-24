@@ -1,0 +1,13 @@
+import useToggle from "./hooks/useToggle"
+
+const ToggleTest = () => {
+    const [isOpen, toggleOpen] = useToggle();
+  return (
+    <div>
+        <button onClick={toggleOpen}>Toggle</button>
+        { isOpen && <p>Hello, this is visible!</p> }
+    </div>
+  )
+}
+
+export default ToggleTest
